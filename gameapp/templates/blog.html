@@ -16,7 +16,9 @@
       <hr>
       <h2>{{blog.title}}</h2>
       <h5><span class="glyphicon glyphicon-time"></span> Post by Author, {{blog.date}}</h5>
+      {% if blog.image %}
       <img src='media/{{ blog.image }}'>
+      {% endif %}
       <p>{{blog.content}}</p>
       <br><br>
       {% endfor%}
