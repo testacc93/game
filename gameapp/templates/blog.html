@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+
+{% block title %}Blog{% endblock title %}
+ 
+{% endblock head %}
+{% block body %}
+
+<div class="col-sm-9" style="margin:auto">
+{% for blog in blogs%}
+
+
+
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>{{blog.title}}</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Author, {{blog.date}}</h5>
+      <img src='media/{{ blog.image }}'>
+      <p>{{blog.content}}</p>
+      <br><br>
+      {% endfor%}
+      
+      
+
+
+{% endblock body %}
