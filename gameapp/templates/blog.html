@@ -8,11 +8,12 @@
 {% block body %}
 
 <div class="col-sm-9">
+<h4><small>RECENT POSTS</small></h4>
+
 {% for blog in blogs%}
 
 
 
-      <h4><small>RECENT POSTS</small></h4>
       <hr>
       <h2>{{blog.title}}</h2>
       <h5><span class="glyphicon glyphicon-time"></span> Post by Author, {{blog.date}}</h5>
