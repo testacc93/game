@@ -7,7 +7,7 @@
 {% endblock head %}
 {% block body %}
 
-<div class="col-sm-9" style="margin:auto">
+<div class="col-sm-9">
 {% for blog in blogs%}
 
 
@@ -19,7 +19,7 @@
       {% if blog.image %}
       <img src='media/{{ blog.image }}'>
       {% endif %}
-      <p>{{blog.content}}</p>
+      <p>{{blog.content | safe}}</p>
       <br><br>
       {% endfor%}
       

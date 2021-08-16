@@ -15,3 +15,9 @@ def blog(request):
         "blogs" : all_blog_list
     }
     return render(request, 'blog.html', context)
+
+def invest(request):
+    return render(request, 'invest.html')
+
+def contact(request):
+    return render(request, 'contact.html')
